@@ -1,0 +1,32 @@
+# Copy of bikeclub_olivero with added templates.
+# Sub-theming Olivero is explicitly not supported by Drupal core. 
+# This is intended as a stop-gap measure to adjust templates.
+name: 'Olivero for Drupal Bikeclub'
+description: 'Templates - move to a module later.'
+type: theme
+base theme: olivero
+core_version_requirement: ^11
+libraries:
+  - bikeclub_olivero/global-styling
+regions:
+  header: Header
+  primary_menu: Primary menu
+  secondary_menu: Secondary menu
+  hero: Hero (full width)
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  social: Social Bar
+  content_above: Content Above
+  content: Content
+  sidebar: Sidebar
+  content_below: Content Below
+  footer_top: Footer Top
+  footer_bottom: Footer Bottom
+libraries-extend:
+  views/views.module:
+    - bikeclub_olivero/views
+libraries-override:
+  olivero/global-styling:
+    css:
+      component:
+        css/components/layout-field.css: false
