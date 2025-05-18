@@ -2,7 +2,7 @@
 # Sub-theming Olivero is explicitly not supported by Drupal core. 
 # This is intended as a stop-gap measure to adjust templates.
 name: 'Olivero for Drupal Bikeclub'
-description: 'Templates - move to a module later.'
+description: 'Olivero subtheme.'
 type: theme
 base theme: olivero
 core_version_requirement: ^11
