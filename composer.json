@@ -5,7 +5,7 @@
     "license": ["GPL-2.0-or-later"],
     "require": {
         "drupal/core": "^11",
-		"drupal/drupal_cms_olivero": "^1.0",
+		"drupal/drupal_cms_olivero": "^1.0"
     },
     "version": "1.0.1"
 }
