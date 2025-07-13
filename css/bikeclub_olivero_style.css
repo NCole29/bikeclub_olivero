@@ -1,0 +1,81 @@
+/* bikeclub style overrides for olivero */
+
+/* Overwrite teaser-card to fit-content on cards for all node types */
+.teaser--card .teaser__content {
+  margin-block-start: -90; 
+  max-inline-size: fit-content !important;
+}
+
+/** 
+  Overwrite specs in layout-sidebar.css 
+  Change start column to 1 to remove whitespace at left of main content.
+  **/
+
+.sidebar-grid > .site-main {
+  grid-column: 1 / 7;
+  align-self: flex-start;
+}
+
+@media (min-width: 43.75rem) {
+  .sidebar-grid > .site-main {
+    grid-column: 1 / 15;
+  }
+}
+
+@media (min-width: 62.5rem) {
+  .sidebar-grid > .site-main {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    grid-column: 2 / 10; /* was 3 / 11 */
+  }
+
+  .sidebar-grid > .site-main > .region--content-above,
+  .sidebar-grid > .site-main > .region--content {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    grid-column: 1 / 9;
+  }
+
+  .sidebar-grid > .site-main .layout--content-narrow,
+  .sidebar-grid > .site-main .layout--pass--content-narrow > *,
+  .sidebar-grid > .site-main .layout--content-medium,
+  .sidebar-grid > .site-main .layout--pass--content-medium > * {
+    grid-column: 1 / 9;
+  }
+}
+
+.sidebar-grid .region--sidebar {
+  grid-column: 1 / 7;
+}
+
+@media (min-width: 43.75rem) {
+  .sidebar-grid .region--sidebar {
+    grid-column: 2 / 12; /* was 3 / 13; */
+  }
+}
+
+@media (min-width: 62.5rem) {
+  .sidebar-grid .region--sidebar {
+    grid-column: 12 / 15;
+  }
+}
+
+/* Style the select options in bikeclub-solo theme cancellation color form */
+select option[value='#ffb5ba'] { background-color: #ffb5ba; color: #ffffff;}
+select option[value='#be0032'] { background-color: #be0032; color: #ffffff;}
+select option[value='#f38400'] { background-color: #f38400; color: #ffffff;}
+select option[value='#f3c300'] { background-color: #f3c300; color: #ffffff;}
+select option[value='#008856'] { background-color: #008856; color: #ffffff;}
+select option[value='#00a1c2'] { background-color: #00a1c2; color: #ffffff;}
+select option[value='#9a4eae'] { background-color: #9a4eae; color: #ffffff;}
+select option[value='#9a4eae'] { background-color: #9a4eae; color: #ffffff;}
+select option[value='#ffb7a5'] { background-color: #ffb7a5; color: #ffffff;}
+select option[value='#e25822'] { background-color: #e25822; color: #ffffff;}
+select option[value='#f6a600'] { background-color: #f6a600; color: #ffffff;}
+select option[value='#dcd300'] { background-color: #dcd300; color: #ffffff;}
+select option[value='#8db600'] { background-color: #8db600; color: #ffffff;}
+select option[value='#27a64c'] { background-color: #27a64c; color: #ffffff;}
+select option[value='#008882'] { background-color: #008882; color: #ffffff;}
+select option[value='#0085a1'] { background-color: #0085a1; color: #ffffff;}
+select option[value='#30267a'] { background-color: #30267a; color: #ffffff;}
+select option[value='#870074'] { background-color: #870074; color: #ffffff;}
+select option[value='#ce4676'] { background-color: #ce4676; color: #ffffff;}
