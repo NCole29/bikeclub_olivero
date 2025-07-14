@@ -1,10 +1,10 @@
 # Copy of bikeclub_olivero with added templates.
 # Sub-theming Olivero is explicitly not supported by Drupal core. 
 # This is intended as a stop-gap measure to adjust templates.
-name: 'Subtheme of drupal_cms_olivero theme.'
-description: 'Olivero subtheme.'
+name: 'Bikeclub Olivero.'
+description: 'Subtheme of Olivero.'
 type: theme
-base theme: drupal_cms_olivero
+base theme: olivero
 core_version_requirement: ^11
 libraries:
   - bikeclub_olivero/global-styling
